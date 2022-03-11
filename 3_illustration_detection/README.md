@@ -18,7 +18,7 @@ I re-used their notebook [train_model.ipynb](https://github.com/LibraryOfCongres
 
 Now that we have a model, let's see how it performs on some of our DFKV images. We would expect to perform moderatly well, as the files are a little bit different. In our dataset there are also some newspapers, but it consists mostly of books, in which the pages structure is different from a newspapers one. We do this work in the `base_model_on_DFKV.ipynb` notebook, which is again heavily inspired by the Newspapers Navigator project's notebook [process_chronam_pages.ipynb](https://github.com/LibraryOfCongress/newspaper-navigator/blob/master/notebooks/process_chronam_pages.ipynb), especially the `generate_predictions` function.
 
-In `./a_base_detectron/DFKV_data/test` are the ten test image used. In `DFKV_output/test` are the json files that contain the output of the model. Inside, there are the boxes coordinates `[x_top_left_corner, y_top_left_corner, x_bottom_right_corner, y_bottom_right_corner]`, along with a probability score and the category label associated.
+In `./a_base_detectron/DFKV_data/test` are the ten test image used. In `DFKV_output/test` are the json files that contain the output of the model. Inside, there are the boxes coordinates, along with a probability score and the category label associated.
 
 Displaying some results showed that the illustrations in the images are usually found, but classified in different classes (photos, illustrations, or advertisement) and with different levels of scores depending on the layout. Also, the boxes do not frame really well the images, precision could be improved.
 
@@ -28,9 +28,13 @@ For the next step, we will want to create our own training data, suitable for ou
 
 ### Gathering
 
-### Annotating
+In order to have a model that fits our task, we want to have training data images that have the same global structure as the future test images, but not exactly those images. For that, we collect Gallica images that are not from the test dataset. This is done and explained in this `./b_training_data_collection/training_data_collection.ipynb`, and the images are in the `./b_training_data_collection/data/training_images/` folder. However, not all the images actually have illustrations in them. I manually deleted the majority of these, because having too many of them won't be helpful for the model. 
 
-### Choice of classes and merging datasets
+### Annotating, choice of classes and merging datasets
+
+Now, we need to annotate ou data. We will follow the [COCO](https://cocodataset.org/#format-data) standards, because it is the one that detectron2 uses. We use a tool called [COCO Annotator](https://madewithvuejs.com/coco-annotator). 
+
+At this step, we need to think about our goal : detecting illustrations. We do not need as much detail about the type of content as in the Newspaper Navigator project. So, for our annotations, there will only be one class : Illustration. But we will not throw out of the window the whole Newspapers dataset ! We will just keep only the 'Photograph', 'Illustration' and 'Comics/Cartoon' annotations, and put them all together in the same (and only) class. That's because all the images in these categories would be the kind of content we want to segment, and not the others. 
 
 ## Detectron2 Model for DFKV
 
