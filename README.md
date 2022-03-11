@@ -15,3 +15,14 @@ TODO explain goal of data reconciliation
 TODO
 
 
+## 3 - Computer Vision Model
+
+### Base Detectron 2 Model
+
+### Annotating More Training Data
+
+### Finetuning
+
+
+## 4 - Prediction on Gallica Dataset
+
