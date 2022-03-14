@@ -28,7 +28,7 @@ For the next step, we will want to create our own training data, suitable for ou
 
 ### Gathering
 
-In order to have a model that fits our task, we want to have training data images that have the same global structure as the future test images, but not exactly those images. For that, we collect Gallica images that are not from the test dataset. This is done and explained in this `./b_training_data_collection/training_data_collection.ipynb`, and the images are in the `./b_training_data_collection/data/training_images/` folder. However, not all the images actually have illustrations in them. I manually deleted the majority of these, because having too many of them won't be helpful for the model. 
+In order to have a model that fits our task, we want to have training data images that have the same global structure as the future test images, but not exactly those images. For that, we collect Gallica images that are not from the test dataset. This is done and explained in this `./b_training_data_collection/training_data_collection.ipynb`, and the images are in the `./b_training_data_collection/data/training_images/` folder. 
 
 ### Annotating, choice of classes and merging datasets
 
