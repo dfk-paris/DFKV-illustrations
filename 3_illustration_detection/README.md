@@ -32,9 +32,12 @@ In order to have a model that fits our task, we want to have training data image
 
 ### Annotating, choice of classes and merging datasets
 
-Now, we need to annotate ou data. We will follow the [COCO](https://cocodataset.org/#format-data) standards, because it is the one that detectron2 uses. We use a tool called [COCO Annotator](https://madewithvuejs.com/coco-annotator). 
+Now, we need to annotate ou data. We will follow the [COCO](https://cocodataset.org/#format-data) standards, because it is the one that detectron2 uses. We use a tool called [makesense.ai](https://www.makesense.ai/). It is convinient as it is an online tool and very easy to use.
+
 
 At this step, we need to think about our goal : detecting illustrations. We do not need as much detail about the type of content as in the Newspaper Navigator project. So, for our annotations, there will only be one class : Illustration. But we will not throw out of the window the whole Newspapers dataset ! We will just keep only the 'Photograph', 'Illustration' and 'Comics/Cartoon' annotations, and put them all together in the same (and only) class. That's because all the images in these categories would be the kind of content we want to segment, and not the others. 
+
+During the annotating process, we see that not all of the gathered images contain illustrations in them. We remove them from the training data. The resulting annotations are in the `annotations_DFKV.json`. (TODO push file)
 
 ## Detectron2 Model for DFKV
 
