@@ -37,7 +37,7 @@ Now, we need to annotate ou data. We will follow the [COCO](https://cocodataset.
 
 At this step, we need to think about our goal : detecting illustrations. We do not need as much detail about the type of content as in the Newspaper Navigator project. So, for our annotations, there will only be one class : Illustration. But we will not throw out of the window the whole Newspapers dataset ! We will just keep only the 'Photograph', 'Illustration' and 'Comics/Cartoon' annotations, and put them all together in the same (and only) class. That's because all the images in these categories would be the kind of content we want to segment, and not the others. 
 
-During the annotating process, we see that not all of the gathered images contain illustrations in them. We remove them from the training data. The resulting annotations are in the `annotations_DFKV.json`. (TODO push file)
+During the annotating process, we see that not all of the gathered images contain illustrations in them. We remove them from the training data. We also remove documents that are newspapers, as we already have enough of them in the training data. The resulting annotations are in the `annotations_DFKV.json`. (TODO push file)
 
 ## Detectron2 Model for DFKV
 
