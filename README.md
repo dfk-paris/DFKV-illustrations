@@ -17,12 +17,7 @@ TODO
 
 ## 3 - Computer Vision Model
 
-### Base Detectron 2 Model
-
-### Annotating More Training Data
-
-### Finetuning
-
+Then, we train a Detectron2 model to detect illustrations in our images. More details on the procedure [here](https://github.com/dfk-paris/DFKV-illustrations/tree/main/3_illustration_detection).
 
 ## 4 - Prediction on Gallica Dataset
 
