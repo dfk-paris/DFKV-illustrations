@@ -1,23 +1,17 @@
 # DFKV illustrations - Internship Project
 
-TODO give context for the project.
+TODO give context and general description of the project.
 
-## 0 - Database Description
-
-TODO
-
-## 1 - Data reconciliation
-
-TODO explain goal of data reconciliation
-
-## 2 - Subset for Illustration 
+## Database Description
 
 TODO
 
+## Folder organization
 
-## 3 - Computer Vision Model
+The folders are organized in chronological order. In each of the subsection, you will find another README.md that explains in details the steps undertaken and discussions about them. Organisation of the repository : 
 
-Then, we train a Detectron2 model to detect illustrations in our images. More details on the procedure [here](https://github.com/dfk-paris/DFKV-illustrations/tree/main/3_illustration_detection).
-
-## 4 - Prediction on Gallica Dataset
-
+.
+├── 1_data_reconciliation                   # Filling some of the missing IIIF and wikidata links of the database
+├── 2_gallica_subset                   # Preparing a subset of data that will be used for testing
+├── 3_illustration_detection                     # Detecting the illustrations in the documents
+└── README.md
