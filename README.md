@@ -10,6 +10,15 @@ TODO
 
 The folders are organized in chronological order. In each of the subsection, you will find another README.md that explains in details the steps undertaken and discussions about them. Organisation of the repository : 
 
+    .
+    ├── build                   # Compiled files (alternatively `dist`)
+    ├── docs                    # Documentation files (alternatively `doc`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── LICENSE
+    └── README.md
+
 
   .
   ├── 1_data_reconciliation                   # Filling some of the missing IIIF and wikidata links of the database
