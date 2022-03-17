@@ -43,4 +43,13 @@ Now, we merge all these annotation files, along with the annotations from the Ne
 
 ## Detectron2 Model for DFKV
 
-### TODO
+With our new training data, we train the model for 10 epochs. This is done in [this](https://github.com/dfk-paris/DFKV-illustrations/blob/main/3_illustration_detection/a_base_detectron/notebooks/train_model_dfkv.ipynb) notebook. These is the final precision we get on the validation data :
+
+|   AP   |  AP50  |  AP75  |  APs  |  APm   |  APl   |
+|:------:|:------:|:------:|:-----:|:------:|:------:|
+| 64.078 | 81.348 | 73.256 |  nan  | 46.535 | 64.366 |
+
+These results are much better than the previous 45% of AP, with the model from Newspaper Navigator on our dataset. 
+We also try to generate some predictions on random samples of test data (you can check them out at the bottom of the training notebook) and display them, and we also visually see that the bounding boxes are more accurate, and the model is more sure about them.
+
+We probably still can do better, what I want to do now is finding more training data and annotate them, to train the model solely on them, and play with the parameters of the model.
