@@ -43,7 +43,7 @@ Now, we merge all these annotation files, along with the annotations from the Ne
 
 ## Detectron2 Model for DFKV
 
-With our new training data, we train the model for 10 epochs. This is done in [this](https://github.com/dfk-paris/DFKV-illustrations/blob/main/3_illustration_detection/a_base_detectron/notebooks/train_model_dfkv.ipynb) notebook. These is the final precision we get on the validation data :
+With our new training data, we train the model for 10 epochs. This is done in [this](https://github.com/dfk-paris/DFKV-illustrations/blob/main/3_illustration_detection/a_base_detectron/notebooks/train_model_dfkv.ipynb) notebook. The final model weigths are in `a_base_detectron/model_weigths/model_final_001.pth`. These are the final precision we get on the validation data :
 
 |   AP   |  AP50  |  AP75  |  APs  |  APm   |  APl   |
 |:------:|:------:|:------:|:-----:|:------:|:------:|
