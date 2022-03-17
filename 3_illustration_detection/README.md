@@ -53,3 +53,6 @@ These results are much better than the previous 45% of AP, with the model from N
 We also try to generate some predictions on random samples of test data (you can check them out at the bottom of the training notebook) and display them, and we also visually see that the bounding boxes are more accurate, and the model is more sure about them.
 
 We probably still can do better, what I want to do now is finding more training data and annotate them, to train the model solely on them, and play with the parameters of the model.
+
+Let's first see what happens when we train the model on the 500 images from DFKV.
+
