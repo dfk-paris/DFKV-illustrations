@@ -43,7 +43,7 @@ Now, we merge all these annotation files, along with the annotations from the Ne
 
 ## Detectron2 Model for DFKV
 
-With our new training data, we train the model for 10 epochs. This is done in [this](https://github.com/dfk-paris/DFKV-illustrations/blob/main/3_illustration_detection/a_base_detectron/notebooks/train_model_dfkv.ipynb) notebook. The final model weigths are in `a_base_detectron/model_weigths/model_final_001.pth`. These are the final precision we get on the validation data :
+With our new training data, we train the model for 10 epochs. The final model weigths are in `a_base_detectron/model_weigths/model_final_001.pth`. These are the final precision we get on the validation data :
 
 |   AP   |  AP50  |  AP75  |  APs  |  APm   |  APl   |
 |:------:|:------:|:------:|:-----:|:------:|:------:|
@@ -54,5 +54,10 @@ We also try to generate some predictions on random samples of test data (you can
 
 We probably still can do better, what I want to do now is finding more training data and annotate them, to train the model solely on them, and play with the parameters of the model.
 
-Let's first see what happens when we train the model on the 500 images from DFKV.
+Let's first train the model on the 500 images from DFKV. Even from the first epoch, we achieve an average precision of 75.4, which is already way better than the previous model. After 10 epochs, here are the results (see the [notebook](https://github.com/dfk-paris/DFKV-illustrations/blob/main/3_illustration_detection/a_base_detectron/notebooks/train_model_dfkv.ipynb)) : 
 
+|   AP   |  AP50  |  AP75  |  APs  |  APm  |  APl   |
+|:------:|:------:|:------:|:-----:|:-----:|:------:|
+| 96.333 | 99.857 | 98.837 |  nan  |  nan  | 96.333 |
+
+Well, even with less training data, we have a very good model. When we look at test examples, we observe that the data the model has difficulty with are image formats that it has not encoutered in the training dataset, such as newspapers or cartoons. Now, we go back to gathering training data to find even more training data to be able to face a wide variety of different documents.
