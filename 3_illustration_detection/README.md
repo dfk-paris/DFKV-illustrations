@@ -60,4 +60,4 @@ Let's first train the model on the 500 images from DFKV. Even from the first epo
 |:------:|:------:|:------:|:-----:|:-----:|:------:|
 | 96.333 | 99.857 | 98.837 |  nan  |  nan  | 96.333 |
 
-Well, even with less training data, we have a very good model. The weights are in `model_final.pth`. When we look at test examples, we observe that the data the model has difficulty with are image formats that it has not encoutered in the training dataset, such as newspapers or cartoons. Now, we go back to gathering training data to find even more training data to be able to face a wide variety of different documents.
+Well, even with less training data, we have a very good model. The weights are in `model_final_002.pth`. When we look at test examples, we observe that the data the model has difficulty with are image formats that it has not encoutered in the training dataset, such as newspapers or cartoons. Now, we go back to gathering training data to find even more training data to be able to face a wide variety of different documents.
