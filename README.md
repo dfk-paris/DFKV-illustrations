@@ -4,7 +4,7 @@ For the 5 months of my internship at DFK Paris, I am working on one of their cur
 
 ## Database Description
 
-The database (TODO add link) comes from one of the historical projects of the German Forum for Art History in Paris. It is the result of three merged databases :
+The database, available here (TODO add link), comes from one of the historical projects of the German Forum for Art History in Paris. It is the result of three merged databases :
 
 - *Franco-German Art Mediation 1871-1940 (Paris)*
 - *Franco-German Art Mediation 1871-1940 (Berlin)*
