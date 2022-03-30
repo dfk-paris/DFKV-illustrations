@@ -22,6 +22,7 @@ The folders are organized in chronological order. In each of the subsection, you
      ├── 2_gallica_subset                        # Preparing a subset of data that will be used for testing
      ├── 3_illustration_detection                # Creating the model to detect illustrations in the documents
      ├── 4_illustration_extraction               # Extracting the illustrations in the documents
+     ├── 5_illustration_enrichment               # Enriching illustrations with metadata
      └── README.md
 
 
