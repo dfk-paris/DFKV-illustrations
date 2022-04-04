@@ -9,7 +9,7 @@ The proposed steps are :
 - Find topics discussed around the illustrations
 - Find name/authors of artworks
 
-# Clustering of images based on structural similarity
+## Clustering of images based on structural similarity
 
 To have a first look at the dataset structure, we first used [Pixplot](https://github.com/YaleDHLab/pix-plot), to visualize our illustrations in a two-dimensional projection within which similar images are clustered together. We use the HDBCAN algorithm to create the clusters of images, and then UMAP to be able to visualize the results into the 2D space. With this first approach, we can identify different categories of illustrations, more or less precisely. Here is an example of cluster of pictures of furnitures :
 
@@ -25,4 +25,10 @@ Some other identified clusters are :
 - abstract paintings 
 
 The list is not exhaustive, and you can find pictures of part of the clusters in `./img/`
+
+## Classification of illustration : is it a painting reproduction or something else ?
+
+Ideally, we would like to be able to find tags for the different illustrations. But those tags would be very different if the illustration were a painting or a photography of an object for example. That is why, the first classification that we will do will be to determine if the illustration is a painting reproduction or not. It is done in `b_painting_other_classification.ipynb`.
+
+We first try a simple ResNet32 architecture, for 17 cycles, and get a final accuracy of 0.80. That is not bad but we would like to do better, because right now on the test set out of 200 illustrations, 27 were wongly classified as 'other', and 13 as 'reproduction'. 
 
