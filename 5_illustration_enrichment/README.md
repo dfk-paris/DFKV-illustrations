@@ -32,4 +32,14 @@ Ideally, we would like to be able to find tags for the different illustrations. 
 
 We first try a simple ResNet32 architecture, for 17 cycles, and get a final accuracy of 0.80. That is not bad but we would like to do better, because right now on the test set out of 200 illustrations, 27 were wongly classified as 'other', and 13 as 'reproduction'. 
 
-If we look at the current state-of-the-art in terms of image classification, we see that Transformers models are beginning to shine in the field of Computer Vision too (where they were first used and showed great success in Natural Langage Processing). In the `TODO` notebook, we focused on training such a model, fousing especially on finding adapted Data Augmentation and Regularization parameters, as their improtance has been demonstrated in [this](https://arxiv.org/pdf/2106.10270.pdf) paper. As also mentionned in the paper, for trainings with relatively small datasets - as it is the case here - transfer learning leads faster to better results, so we will use a pre-trained model.
+If we look at the current state-of-the-art in terms of image classification, we see that Transformers models are beginning to shine in the field of Computer Vision too (where they were first used and showed great success in Natural Langage Processing). In the `c_vision_transformer_augreg.ipynb` notebook, we focused on training such a model, fousing especially on finding adapted Data Augmentation and Regularization parameters, as their improtance has been demonstrated in [this](https://arxiv.org/pdf/2106.10270.pdf) paper. As also mentionned in the paper, for trainings with relatively small datasets - as it is the case here - transfer learning leads faster to better results, so we will use a pre-trained model. The model on training data was performing good with a final test accuracy of 0.914. However, I encoutered problems with loading checkpoints and could not re-use the finetuned model on our DFKV data. Had to think for another solution.
+
+## Classification of illustration's type
+
+We decide to move to another tool : the ready-to-use Google Vision AI tool, which is a computer vision model that describes what is in the image by assigning it labels. After a few tries with test images, we see that the output labels are quite precise. Instead of classifying reproduction/not reproduction, we will try to classify the illustrations into 7 categories : Reproduction, Photography, Object, Architecture/decoration, Sculpture, Plan and Ornament. We will proceed the following way (in `g_label_illus.ipynb`): 
+
+- for each illustration, get the labels along with probabilities that Vision AI gives us
+- create a dictionary that counts the occurences of each label for each category on a random subset of the dataset. That will create a distribution of words depending on the category
+- keep only the most relevant ones using TF-IDF scores
+- Classify using Naïve Bayes, and compute a confidence score
+- For the predictions that have a low confidence score, manually check/change their category
