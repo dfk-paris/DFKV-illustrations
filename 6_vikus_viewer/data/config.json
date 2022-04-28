@@ -1,0 +1,84 @@
+{
+    "project": {
+      "name": "DFKV",
+      "quality": 1
+   },
+    "loader": {
+      "info": "TODO/data/vangogh/info.md",
+      "timeline": "TODO/data/vangogh/timeline.csv",
+      "items": "TODO/data/vangogh/data.csv",
+      "tsne": "TODO/data/vangogh/tsne.csv",
+      "textures": {
+        "medium": {
+          "size": 256,
+          "url": "TODO/data/vangogh/sprites/web_web_full.json"
+        },
+        "detail": {
+          "size": 1024,
+          "url": "TODO/data/vangogh/1024/"
+        },
+        "big": {
+          "size": 4096,
+          "url": "TODO/data/vangogh/4096/"
+        }
+      }
+    },
+    "style": {
+      "fontColor": "#2d3b43",
+      "fontColorActive": "#eae2cb",
+      "fontBackground": "#295b71",
+      "textShadow": "1px 1px 0px #f8f4e9",
+      "canvasBackground": "#eae2cb",
+      "timelineBackground": "#fff9eb",
+      "timelineFontColor": "#000",
+      "backgroundHeader": "#035151",
+      "fontColorHeader": "#f8774f",
+      "detailBackground": "#EEE",
+      "infoBackground": "#33444c",
+      "infoFontColor": "#fff",
+      "searchbarBackground": "#295b71"
+    },
+    "projection": {
+      "columns": 6
+    },
+    "detail": {
+      "structure": [      
+        {
+          "name": "Description",
+          "source": "_description",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Year",
+          "source": "_year",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Material",
+          "source": "_material",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Dimensions",
+          "source": "column._width + 'mm * ' + column._height + 'mm'",
+          "display": "column",
+          "type": "function"
+        },
+        {
+          "name": "Keywords",
+          "source": "_keywords",
+          "display": "column",
+          "type": "array"
+        },
+        {
+          "name": "Id",
+          "source": "_id",
+          "display": "column",
+          "type": "text"
+        }
+      ]
+    }
+  }
