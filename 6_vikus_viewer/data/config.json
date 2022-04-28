@@ -4,22 +4,22 @@
       "quality": 1
    },
     "loader": {
-      "info": "TODO/data/vangogh/info.md",
-      "timeline": "TODO/data/vangogh/timeline.csv",
-      "items": "TODO/data/vangogh/data.csv",
-      "tsne": "TODO/data/vangogh/tsne.csv",
+      "info": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/info.md",
+      "timeline": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/timeline.csv",
+      "items": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/data.csv",
+      "tsne": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/tsne.csv",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "TODO/data/vangogh/sprites/web_web_full.json"
+          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/sprites/web_web_full.json"
         },
         "detail": {
           "size": 1024,
-          "url": "TODO/data/vangogh/1024/"
+          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/1024/"
         },
         "big": {
           "size": 4096,
-          "url": "TODO/data/vangogh/4096/"
+          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/4096/"
         }
       }
     },
