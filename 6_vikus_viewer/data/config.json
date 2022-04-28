@@ -62,10 +62,16 @@
           "type": "text"
         },
         {
+            "name": "Artist",
+            "source": "_artist",
+            "display": "column",
+            "type": "text"
+          },
+        {
           "name": "Dimensions",
-          "source": "column._width + 'mm * ' + column._height + 'mm'",
+          "source": "_dimensions",
           "display": "column",
-          "type": "function"
+          "type": "text"
         },
         {
           "name": "Keywords",
