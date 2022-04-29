@@ -4,20 +4,20 @@
       "quality": 1
    },
     "loader": {
-      "info": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/info.md",
-      "items": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/data.csv",
+      "info": "./info.md",
+      "items": "./data.csv",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/sprites/spritesheet.json"
+          "url": "./sprites/spritesheet.json"
         },
         "detail": {
           "size": 1024,
-          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/1024/"
+          "url": "./data/1024/"
         },
         "big": {
           "size": 4096,
-          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/4096/"
+          "url": "./data/4096/"
         }
       }
     },
