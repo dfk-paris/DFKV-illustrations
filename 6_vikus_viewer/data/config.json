@@ -4,12 +4,12 @@
       "quality": 1
    },
     "loader": {
-      "info": "./info.md",
-      "items": "./data.csv",
+      "info": "./data/info.md",
+      "items": "./data/data.csv",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "./sprites/spritesheet.json"
+          "url": "./data/sprites/spritesheet.json"
         },
         "detail": {
           "size": 1024,
