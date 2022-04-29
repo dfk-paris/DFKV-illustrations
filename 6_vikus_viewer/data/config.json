@@ -5,12 +5,11 @@
    },
     "loader": {
       "info": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/info.md",
-     // "timeline": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/timeline.csv",
       "items": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/data.csv",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/sprites/web_web_full.json"
+          "url": "https://github.com/dfk-paris/DFKV-illustrations/blob/main/6_vikus_viewer/data/sprites/spritesheet.json"
         },
         "detail": {
           "size": 1024,
