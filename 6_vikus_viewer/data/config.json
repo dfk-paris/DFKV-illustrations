@@ -6,6 +6,7 @@
     "loader": {
       "info": "./data/info.md",
       "items": "./data/data.csv",
+      "timeline": "./data/timeline.csv",
       "textures": {
         "medium": {
           "size": 256,
@@ -68,6 +69,18 @@
         {
           "name": "Dimensions",
           "source": "_dimensions",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Source",
+          "source": "_source",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Journal ID",
+          "source": "_journal-id",
           "display": "column",
           "type": "text"
         },
