@@ -38,19 +38,19 @@
       "searchbarBackground": "#295b71"
     },
     "projection": {
-      "columns": 6
+      "columns": 11
     },
     "detail": {
       "structure": [      
         {
-          "name": "Description",
+          "name": "Title",
           "source": "_description",
           "display": "column",
           "type": "text"
         },
         {
-          "name": "Year",
-          "source": "_year",
+          "name": "Artist",
+          "source": "_artist",
           "display": "column",
           "type": "text"
         },
@@ -61,11 +61,11 @@
           "type": "text"
         },
         {
-            "name": "Artist",
-            "source": "_artist",
-            "display": "column",
-            "type": "text"
-          },
+          "name": "Date of Artwork",
+          "source": "_date-artwork",
+          "display": "column",
+          "type": "text"
+        },
         {
           "name": "Dimensions",
           "source": "_dimensions",
@@ -73,17 +73,17 @@
           "type": "text"
         },
         {
-          "name": "Source",
-          "source": "_source",
+          "name": "Journal Name",
+          "source": "_journal-name",
           "display": "column",
           "type": "text"
         },
         {
-          "name": "Journal ID",
-          "source": "_journal-id",
+          "name": "Year of Journal",
+          "source": "_year",
           "display": "column",
           "type": "text"
-        },
+        },          
         {
           "name": "Keywords",
           "source": "_keywords",
@@ -91,11 +91,24 @@
           "type": "array"
         },
         {
-          "name": "Id",
-          "source": "_id",
+          "name": "View source from DFKV",
+          "source": "_link-dfkv-md",
           "display": "column",
+          "type": "markdown"
+        },
+        {
+          "name": "View in IIIF journal",
+          "source": "_link-iiif-md",
+          "display": "column",
+          "type": "markdown"
+        },
+        {
+          "name": "Source Of Metadata",
+          "source": "_source",
+          "display": "wide",
           "type": "text"
         }
+
       ]
     }
   }
