@@ -7,18 +7,19 @@
       "info": "./data/info.md",
       "items": "./data/data.csv",
       "timeline": "./data/timeline.csv",
+      "ratioSizeIllus": "./data/illu_ratios.json",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "./data/sprites/spritesheet.json"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/sprites/spritesheet.json"
         },
         "detail": {
           "size": 1024,
-          "url": "./data/1024/"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/1024/"
         },
         "big": {
           "size": 4096,
-          "url": "./data/4096/"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/4096/"
         }
       }
     },
