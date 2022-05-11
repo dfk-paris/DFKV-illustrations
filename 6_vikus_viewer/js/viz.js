@@ -45,7 +45,6 @@ if (Modernizr.webgl && !utils.isMobile()) {
 }
 
 function init() {
-
 	tags = Tags();
 	canvas = Canvas();
 	search = Search();
@@ -58,35 +57,36 @@ function init() {
 		
 		Loader(config.loader.timeline).finished(function (timeline) {
 			Loader(config.loader.items).finished(function (data) {
+				d3.json(config.loader.ratioSizeIllus, function (ratio) {
+					utils.clean(data, config.delimiter);
 
-				utils.clean(data, config.delimiter);
+					tags.init(data, config);
+					search.init();
+					canvas.init(data, timeline, config, ratio);
 
-				tags.init(data, config);
-				search.init();
-				canvas.init(data, timeline, config);
-
-				if (config.loader.tsne) {
-					d3.csv(config.loader.tsne, function (tsne) {
-						console.log(tsne)
-						d3.select(".navi").classed("hide", false)
-						canvas.addTsneData(tsne)
-					})
-				}
-
-				LoaderSprites()
-					.progress(function (textures) {
-						Object.keys(textures).forEach(function (id) {
-							data
-								.filter(function (d) {
-									return d.id === id
-								})
-								.forEach(function (d) {
-									d.sprite.texture = textures[id]
-								})
+					if (config.loader.tsne) {
+						d3.csv(config.loader.tsne, function (tsne) {
+							console.log(tsne)
+							d3.select(".navi").classed("hide", false)
+							canvas.addTsneData(tsne)
 						})
-						canvas.wakeup()
-					})
-					.load(config.loader.textures.medium.url)
+					}
+
+					LoaderSprites()
+						.progress(function (textures) {
+							Object.keys(textures).forEach(function (id) {
+								data
+									.filter(function (d) {
+										return d.id === id
+									})
+									.forEach(function (d) {
+										d.sprite.texture = textures[id]
+									})
+							})
+							canvas.wakeup()
+						})
+						.load(config.loader.textures.medium.url)
+				});
 			});
 		});
 	});
