@@ -253,7 +253,10 @@ function Canvas() {
       sprite.anchor.x = 0.5;
       sprite.anchor.y = 0.5;
 
-      sprite.scale.x = d.scaleFactor;
+      // change size according to actual size in page
+      d.scaleFactor = 0.3 + ratio[d.id] 
+
+      sprite.scale.x = d.scaleFactor; 
       sprite.scale.y = d.scaleFactor;
 
       sprite._data = d;
