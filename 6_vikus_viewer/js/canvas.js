@@ -405,8 +405,8 @@ function Canvas() {
         d.x = startX + (i % columns) * (rangeBand / columns);
         d.y = (invert ? 1 : -1) * (row * (rangeBand / columns));
 
-        d.x1 = d.x * scale1 + imageSize/ 2; //HERE
-        d.y1 = d.y * scale1 + imageSize / 2; //HERE
+        d.x1 = d.x * scale1 + imageSize/ 2; 
+        d.y1 = d.y * scale1 + imageSize / 2; 
 
         if (d.sprite.position.x == 0) {
           d.sprite.position.x = d.x1;
@@ -414,8 +414,8 @@ function Canvas() {
         }
 
         if (d.sprite2) {
-          d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; //HERE
-          d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; //HERE
+          d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; 
+          d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; 
         }
 
         d.order = (invert ? 1 : 1) * (total - i);
@@ -736,8 +736,8 @@ function Canvas() {
     });
 
     data.forEach(function (d) {
-      d.x1 = d.x * scale1 + imageSize / 2; //HERE
-      d.y1 = d.y * scale1 + imageSize / 2; //HERE
+      d.x1 = d.x * scale1 + imageSize / 2; 
+      d.y1 = d.y * scale1 + imageSize / 2; 
 
       if (d.sprite.position.x == 0) {
         d.sprite.position.x = d.x1;
@@ -745,8 +745,8 @@ function Canvas() {
       }
 
       if (d.sprite2) {
-        d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; //HERE
-        d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; //HERE
+        d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; 
+        d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; 
       }
     });
 
@@ -845,8 +845,8 @@ function Canvas() {
 
     sprite.anchor.x = 0.5;
     sprite.anchor.y = 0.5;
-    sprite.position.x = d.x * scale2 + imageSize2 / 2; //HERE
-    sprite.position.y = d.y * scale2 + imageSize2 / 2; //HERE
+    sprite.position.x = d.x * scale2 + imageSize2 / 2; 
+    sprite.position.y = d.y * scale2 + imageSize2 / 2; 
     sprite._data = d;
     stage4.addChild(sprite);
     d.sprite2 = sprite;
@@ -906,8 +906,8 @@ function Canvas() {
 
     sprite.anchor.x = 0.5;
     sprite.anchor.y = 0.5;
-    sprite.position.x = d.x * scale3 + imageSize3 / 2; //HERE
-    sprite.position.y = d.y * scale3 + imageSize3 / 2; //HERE
+    sprite.position.x = d.x * scale3 + imageSize3 / 2; 
+    sprite.position.y = d.y * scale3 + imageSize3 / 2;
     sprite._data = d;
     d.big = true;
     stage5.addChild(sprite);
