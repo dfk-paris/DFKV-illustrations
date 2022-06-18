@@ -6,18 +6,20 @@
     "loader": {
       "info": "./data/info.md",
       "items": "./data/data.csv",
+      "timeline": "./data/timeline.csv",
+      "ratioSizeIllus": "./data/illu_ratios.json",
       "textures": {
         "medium": {
           "size": 256,
-          "url": "./data/sprites/spritesheet.json"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/sprites/spritesheet.json"
         },
         "detail": {
           "size": 1024,
-          "url": "./data/1024/"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/1024/"
         },
         "big": {
           "size": 4096,
-          "url": "./data/4096/"
+          "url": "https://static.dfkg.org/public/k/DFKV_illustrations/4096/"
         }
       }
     },
@@ -37,19 +39,19 @@
       "searchbarBackground": "#295b71"
     },
     "projection": {
-      "columns": 6
+      "columns": 11
     },
     "detail": {
       "structure": [      
         {
-          "name": "Description",
+          "name": "Title",
           "source": "_description",
           "display": "column",
           "type": "text"
         },
         {
-          "name": "Year",
-          "source": "_year",
+          "name": "Artist",
+          "source": "_artist",
           "display": "column",
           "type": "text"
         },
@@ -60,11 +62,11 @@
           "type": "text"
         },
         {
-            "name": "Artist",
-            "source": "_artist",
-            "display": "column",
-            "type": "text"
-          },
+          "name": "Date of Artwork",
+          "source": "_date-artwork",
+          "display": "column",
+          "type": "text"
+        },
         {
           "name": "Dimensions",
           "source": "_dimensions",
@@ -72,17 +74,42 @@
           "type": "text"
         },
         {
+          "name": "Journal Name",
+          "source": "_journal-name",
+          "display": "column",
+          "type": "text"
+        },
+        {
+          "name": "Year of Journal",
+          "source": "_year",
+          "display": "column",
+          "type": "text"
+        },          
+        {
           "name": "Keywords",
           "source": "_keywords",
           "display": "column",
           "type": "array"
         },
         {
-          "name": "Id",
-          "source": "_id",
+          "name": "View source from DFKV",
+          "source": "_link-dfkv-md",
           "display": "column",
+          "type": "markdown"
+        },
+        {
+          "name": "View in IIIF journal",
+          "source": "_link-iiif-md",
+          "display": "column",
+          "type": "markdown"
+        },
+        {
+          "name": "Source Of Metadata",
+          "source": "_source",
+          "display": "wide",
           "type": "text"
         }
+
       ]
     }
   }

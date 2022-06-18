@@ -167,10 +167,12 @@ function Canvas() {
     // console.log("zoomedToImageScale", zoomedToImageScale)
   };
 
-  canvas.init = function (_data, _timeline, _config) {
+  canvas.init = function (_data, _timeline, _config, _ratio) {
     data = _data;
     config = _config;
-
+    ratio = _ratio;
+    test_id = "ILLU_15678_29_0"
+    console.log(ratio[test_id]);
     container = d3.select(".page").append("div").classed("viz", true);
     detailVue._data.structure = config.detail.structure;
 
@@ -251,7 +253,10 @@ function Canvas() {
       sprite.anchor.x = 0.5;
       sprite.anchor.y = 0.5;
 
-      sprite.scale.x = d.scaleFactor;
+      // change size according to actual size in page
+      d.scaleFactor = 0.3 + ratio[d.id] 
+
+      sprite.scale.x = d.scaleFactor; 
       sprite.scale.y = d.scaleFactor;
 
       sprite._data = d;
@@ -400,8 +405,8 @@ function Canvas() {
         d.x = startX + (i % columns) * (rangeBand / columns);
         d.y = (invert ? 1 : -1) * (row * (rangeBand / columns));
 
-        d.x1 = d.x * scale1 + imageSize / 2;
-        d.y1 = d.y * scale1 + imageSize / 2;
+        d.x1 = d.x * scale1 + imageSize/ 2; 
+        d.y1 = d.y * scale1 + imageSize / 2; 
 
         if (d.sprite.position.x == 0) {
           d.sprite.position.x = d.x1;
@@ -409,8 +414,8 @@ function Canvas() {
         }
 
         if (d.sprite2) {
-          d.sprite2.position.x = d.x * scale2 + imageSize2 / 2;
-          d.sprite2.position.y = d.y * scale2 + imageSize2 / 2;
+          d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; 
+          d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; 
         }
 
         d.order = (invert ? 1 : 1) * (total - i);
@@ -731,8 +736,8 @@ function Canvas() {
     });
 
     data.forEach(function (d) {
-      d.x1 = d.x * scale1 + imageSize / 2;
-      d.y1 = d.y * scale1 + imageSize / 2;
+      d.x1 = d.x * scale1 + imageSize / 2; 
+      d.y1 = d.y * scale1 + imageSize / 2; 
 
       if (d.sprite.position.x == 0) {
         d.sprite.position.x = d.x1;
@@ -740,8 +745,8 @@ function Canvas() {
       }
 
       if (d.sprite2) {
-        d.sprite2.position.x = d.x * scale2 + imageSize2 / 2;
-        d.sprite2.position.y = d.y * scale2 + imageSize2 / 2;
+        d.sprite2.position.x = d.x * scale2 + imageSize2 / 2; 
+        d.sprite2.position.y = d.y * scale2 + imageSize2 / 2; 
       }
     });
 
@@ -840,8 +845,8 @@ function Canvas() {
 
     sprite.anchor.x = 0.5;
     sprite.anchor.y = 0.5;
-    sprite.position.x = d.x * scale2 + imageSize2 / 2;
-    sprite.position.y = d.y * scale2 + imageSize2 / 2;
+    sprite.position.x = d.x * scale2 + imageSize2 / 2; 
+    sprite.position.y = d.y * scale2 + imageSize2 / 2; 
     sprite._data = d;
     stage4.addChild(sprite);
     d.sprite2 = sprite;
@@ -901,7 +906,7 @@ function Canvas() {
 
     sprite.anchor.x = 0.5;
     sprite.anchor.y = 0.5;
-    sprite.position.x = d.x * scale3 + imageSize3 / 2;
+    sprite.position.x = d.x * scale3 + imageSize3 / 2; 
     sprite.position.y = d.y * scale3 + imageSize3 / 2;
     sprite._data = d;
     d.big = true;

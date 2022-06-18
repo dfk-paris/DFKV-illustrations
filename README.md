@@ -4,7 +4,7 @@ For the 5 months of my internship at DFK Paris, I am working on one of their cur
 
 ## Database Description
 
-The database, available here (TODO add link), comes from one of the historical projects of the German Forum for Art History in Paris. It is the result of three merged databases :
+The database, available [here](https://dfkv.dfkg.org/ng/index.html#), comes from one of the historical projects of the German Forum for Art History in Paris. It is the result of three merged databases :
 
 - *Franco-German Art Mediation 1871-1940 (Paris)*
 - *Franco-German Art Mediation 1871-1940 (Berlin)*
@@ -24,6 +24,7 @@ The folders are organized in chronological order. In each of the subsection, you
      ├── 4_illustration_extraction               # Extracting the illustrations in the documents
      ├── 5_illustration_enrichment               # Enriching illustrations with metadata
      ├── 6_vikus_viewer                          # Visualisation with Vikus Viewer
+     ├── 7_text_processing                       # Working on text around the illustrations
      └── README.md
 
 
