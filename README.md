@@ -25,6 +25,7 @@ The folders are organized in chronological order. In each of the subsection, you
      ├── 5_illustration_enrichment               # Enriching illustrations with metadata
      ├── 6_vikus_viewer                          # Visualisation with Vikus Viewer
      ├── 7_text_processing                       # Working on text around the illustrations
+     ├── 8_layout_study                          # Working on the visual place of illustrations
      └── README.md
 
 
