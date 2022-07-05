@@ -27,7 +27,7 @@ The database consists of multiple excel files, which we will describe as we use 
 
 # Data reconciliation
 
-We see that each document in the database has, among other attributes, an author and people that the document talks about. These are two informations are available under the `créateur_créatrice` and `impliqué` attributes. These attributes are actually a list of IDs, IDs of people that are referenced in the `People` sheet of the `./data/DFKV_Master.xlsx` file. You can also find the single sheet  `./data/people.xls` (02.03.2022 version). The columns are the following :
+We see that each document in the database has, among other attributes, an author and people that the document talks about. These are two informations are available under the `créateur_créatrice` and `impliqué` attributes. These attributes are actually a list of IDs, IDs of people that are referenced in the `People` sheet of the `./data/DFKV_Master.xlsx` file (TODO version). You can also find the single sheet - with only the people that do not have at least one authority file linked in `./data/people.xls` (02.03.2022 version). The columns are the following :
 
 | Column name        | Description    |  
 | -------------------|:--------------------:|
