@@ -27,7 +27,7 @@ The database consists of multiple excel files, which we will describe as we use 
 
 # Data reconciliation
 
-We see that each document in the database has, among other attributes, an author and people that the document talks about. These are two informations are available under the `créateur_créatrice` and `impliqué` attributes. These attributes are actually a list of IDs, IDs of people that are referenced in the `People` sheet of the `./data/DFKV_Master.xlsx` file (TODO version). You can also find the single sheet - with only the people that do not have at least one authority file linked in `./data/people.xls` (02.03.2022 version). The columns are the following :
+We see that each document in the database has, among other attributes, an author and people that the document talks about. These are two informations are available under the `créateur_créatrice` and `impliqué` attributes. These attributes are actually a list of IDs, IDs of people that are referenced in the `People` sheet of the `./data/DFKV_Master.xlsx` file (04.01.2022 version). You can also find the single sheet - with only the people that do not have at least one authority file linked in `./data/people.xls` (02.03.2022 version). The columns are the following :
 
 | Column name        | Description    |  
 | -------------------|:--------------------:|
@@ -49,4 +49,4 @@ To try to be smart about it, we observe that some people have their first and la
 
 These are usually names that are easy to reconciliate, so we find them using the `people_reconcilitation.ipynb` notebook and fill some of the blanks of the database. Of course, some names are still too obscure to be found in Wikidata, in which case we either add one entry to Wikidata ourselves, or if we can't find the type of person they are then we leave the column blank.
 
-We also do this work of reconciliation for some of the journals in the *Journal* sheet of `DFKV_Master.xlsx`, `./data/journal.xls` (TODO version), to link them with a BNF link, mainly to get familiar with the content of the database.
+We also do this work of reconciliation for some of the journals in the *Journal* sheet of `DFKV_Master.xlsx`, to link them with a BNF link, mainly to get familiar with the content of the database.
