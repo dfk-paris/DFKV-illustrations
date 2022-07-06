@@ -1,3 +1,7 @@
+TODO explain why vikus viewer etc...
+
+
+
 ![VIKUS Viewer](https://vikusviewer.fh-potsdam.de/assets/teaser.png)
 
 # VIKUS Viewer
