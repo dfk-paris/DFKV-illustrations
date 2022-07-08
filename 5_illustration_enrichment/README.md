@@ -4,9 +4,8 @@ We now have all the illustrations that are present in our corpus. We want to mak
 
 The proposed steps are :
 
-- Finding the category of the object illustrated
-- Associate illustrations with descriptors from researchers
-- Find topics discussed around the illustrations
+- Free exploratory analysis of illustration
+- Find the category of the object illustrated
 - Find name/authors of artworks
 
 ## Clustering of images based on structural similarity
