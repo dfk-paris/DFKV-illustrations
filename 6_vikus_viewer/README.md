@@ -2,10 +2,6 @@ This folder is dedicated to the visualisation of all the work done since the beg
 
 We have thousands of illustrations, along with metadata about them and the journals they are in. We will use the [Vikus Viewer](https://vikusviewer.fh-potsdam.de) to visualize them all. It is interesting for us because it is a timeline representation, and all the illustrations are represented at once. You can zoom on the time period you are interested in, filter the data using our keyword or using the search bar, and you can look at one specific illustration and its metadata, expecially a link to the IIIF journal if you want to see the image in context. That way, the visualisation becomes a new open door on the DFKV database. Below the description of the Vikus viewer, as you can find it on their [Github repository](https://github.com/cpietsch/vikus-viewer)
 
-
-
-![VIKUS Viewer](https://vikusviewer.fh-potsdam.de/assets/teaser.png)
-
 # VIKUS Viewer
 
 [VIKUS Viewer](https://vikusviewer.fh-potsdam.de/) is a web-based visualization system that arranges thousands of cultural artifacts on a dynamic canvas and supports the exploration of thematic and temporal patterns of large collections, while providing rapid access to high-resolution imagery.
