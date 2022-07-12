@@ -45,4 +45,22 @@ We decide to move to another tool : the ready-to-use Google Vision AI tool, whic
 
 ## Metadata for reproductions
 
-It would be nice to have more precise information about the painting reproductions that we have. To do that, we query the [Smartify](http://smartify.org) API with every illustration, and find around 1700 known paintings from our dataset. We save their title, painter name, date, and dimensions (`d_paintings_reconciliation.ipynb`). We also would have liked to try using the [Tineye](http://tineye.com) API to perform a reverse image search, but their API was not free, so instead we just scrapped Google Reverse Image Search, and look for links from trusted sources which have well formated data about their images (`f_google_reverse_image_scrap.ipynb`). Once the metadata is grouped together, we can finally prepare the big csv file with every information we have collected so far (`h_preparation.ipynb`), and clean the column to make them easier to use. The final data is available in `./data/complete_dfkv_vikus.csv`
+It would be nice to have more precise information about the painting reproductions that we have. To do that, we query the [Smartify](http://smartify.org) API with every illustration, and find around 1700 known paintings from our dataset. We save their title, painter name, date, and dimensions (`d_paintings_reconciliation.ipynb`). We also would have liked to try using the [Tineye](http://tineye.com) API to perform a reverse image search, but their API was not free, so instead we just scrapped Google Reverse Image Search, and look for links from trusted sources which have well formated data about their images (`f_google_reverse_image_scrap.ipynb`). Once the metadata is grouped together, we can finally prepare the big csv file with every information we have collected so far (`h_preparation.ipynb`), and clean the column to make them easier to use. The final data is available in `./data/complete_dfkv_vikus.csv`. Les colonnes finales sont :
+
+| Column name | Description|
+|--|--|
+| id | ID of the illustration in the for ILLU_<data entry id>_<page nb>_<id on page> |
+| _description | Title of the artork |
+| _artist | Name of the artist |
+| _source | Source of the metadata |
+| _material | Technique used |
+| _dimensions | Dimensions of original, in centimeters usually |
+| _journal-id | DFKV journal id |
+| _date-artwork | Year of the artwork |
+| year | Year of the journal the illustration is in |
+| keywords | Categories of the illustration |
+| _link-dfkv | Link to the DFKV entry |
+| _iiif-link | Link to the IIIF viewer, to the page of the illustration |
+| _journal name | Name of the journal the illustration is in |
+| _link-dfkv-md | Link to the DFKV entry, but in marrkdown for the viewer |
+| _iiif-link-md | Link to the IIIF viewer, but in marrkdown for the viewer |
