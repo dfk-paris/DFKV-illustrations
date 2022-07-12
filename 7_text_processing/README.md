@@ -12,4 +12,4 @@ Now that we have the text, we will explore quickly the possibilties. We start by
 
 ## Relations between text and images
 
-Finally
+Finally, leaving aside the topics a little bit, we try to see in `c_illus_text_viz.ipynb` whether the length of the text and the size of the illustration are related to one another, and how. One interesting result is that through this visualisation, we can start to see the emergence of different journals layouts, with different text/illustrations characteristics. That inspires us to move to the last part of the project : studying the layouts of the journals present in the database
