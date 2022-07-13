@@ -62,8 +62,8 @@ It would be nice to have more precise information about the painting reproductio
 | _link-dfkv | Link to the DFKV entry |
 | _iiif-link | Link to the IIIF viewer, to the page of the illustration |
 | _journal name | Name of the journal the illustration is in |
-| _link-dfkv-md | Link to the DFKV entry, but in marrkdown for the viewer |
-| _iiif-link-md | Link to the IIIF viewer, but in marrkdown for the viewer |
+| _link-dfkv-md | Link to the DFKV entry, but in markdown for the viewer |
+| _iiif-link-md | Link to the IIIF viewer, but in markdown for the viewer |
 
 
 ## Data
@@ -86,7 +86,3 @@ The data you can find in this section is :
 - `orsay_data.csv` : Different metadata for illustrations found on the musée d'Orsay website
 - `simple_dfkv_vikus.csv` : Subset of only known reproductions of data for the Vikus viewer
 - `timeline.csv` : Timeline for the Vikus viewer
-
-
-
-
