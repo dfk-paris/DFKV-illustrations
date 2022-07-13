@@ -64,3 +64,29 @@ It would be nice to have more precise information about the painting reproductio
 | _journal name | Name of the journal the illustration is in |
 | _link-dfkv-md | Link to the DFKV entry, but in marrkdown for the viewer |
 | _iiif-link-md | Link to the IIIF viewer, but in marrkdown for the viewer |
+
+
+## Data
+
+The data you can find in this section is :
+- `DFKV_Data_complet.xlsx` : DFKV main database, complete description [here](https://github.com/dfk-paris/DFKV-illustrations/tree/main/1_data_reconciliation#database-description)
+- `DFKV_Master.csv` : DFKV data about people, journals, ...
+- `DFKV_pages.csv` : For each data entry, its IIIF link (to the canvas!) and number of pages
+- `additional_links.csv` : For each illustration found by reverse Google Image search, the link to the metadata
+- `artnet_data.csv` : Different metadata for illustrations found on Artnet
+- `commons_data.csv` : Different metadata for illustrations found on Wikimedia Commons
+- `complete_dfkv_vikus.csv` : Data for the vikus viewer
+- `final_pred_cat.csv` : For each illustration, the category that it has been classified into
+- `full_data_clean.csv` : For each illustration, every information that we have about them
+- `illu_infos.csv` : First raw information about the illustrations
+- `illu_infos_clean.csv` : Homogeneized above file
+- `illus_urls.txt` : Messy list of uploaded illustrations (just a subset of the database)
+- `link_images.csv` : For each data entry, its IIIF link (to the image!) and number of pages
+- `merged_data.csv` : Merge of `artnet_data.csv`, `commons_data.csv` and `orsay_data.csv`
+- `orsay_data.csv` : Different metadata for illustrations found on the musée d'Orsay website
+- `simple_dfkv_vikus.csv` : Subset of only known reproductions of data for the Vikus viewer
+- `timeline.csv` : Timeline for the Vikus viewer
+
+
+
+
