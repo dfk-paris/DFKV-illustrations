@@ -13,3 +13,16 @@ Now that we have the text, we will explore quickly the possibilties. We start by
 ## Relations between text and images
 
 Finally, leaving aside the topics a little bit, we try to see in `c_illus_text_viz.ipynb` whether the length of the text and the size of the illustration are related to one another, and how. One interesting result is that through this visualisation, we can start to see the emergence of different journals layouts, with different text/illustrations characteristics. That inspires us to move to the last part of the project : studying the layouts of the journals present in the database
+
+## Data
+
+The data you can find in this section is : 
+- `complete_texts_gallica.json` : associates french data entries with their OCRed text, if available
+- `complete_texts_heidelberg.json` : associates german data entries with their OCRed text, if available
+- `complete_texts_page_heidelberg.json` : associates german data entries, for each page, with their OCRed text, if available
+- `data.csv` : data that was used for the vikus viewer, see detailed [description](https://github.com/dfk-paris/DFKV-illustrations/tree/main/5_illustration_enrichment#metadata-for-reproductions)
+- `docword.de_dfkv.txt` : bow description of the german texts
+- `docword.dfkv.txt` : bow description of the french texts
+- `illu_ratios.json` : the key is the illustration's id and the value is the percentage of place that the illustrations takes on the page (between 0 and 1)
+- `vocab.de_dfkv.txt` : vocab list of the german texts
+- `vocab.dfkv.txt` : vocab list of the french texts
