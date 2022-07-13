@@ -5,5 +5,5 @@ This last part of the project is starting to describe the materiality of the obj
 ## Data
 
 The data you can find in this section is : 
-- `illu_pos.json`: the keys is the illustration's id and the value is another dictionnary containing the coordinates of the illustration on the page, and the dimensions of the page
-- `illu_ratios.json` : the keys is the illustration's id and the value is the percentage of place that the illustrations takes on the page (between 0 and 1)
+- `illu_pos.json`: the key is the illustration's id and the value is another dictionnary containing the coordinates of the illustration on the page, and the dimensions of the page
+- `illu_ratios.json` : the key is the illustration's id and the value is the percentage of place that the illustrations takes on the page (between 0 and 1)
